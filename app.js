@@ -6,27 +6,28 @@ const config = {
     {
       question: "Кто сделал данное фото?",
       correctAnswer: "Карагодин",
-      photo: "images/q1.jpg"
+      photo: "images/qv1.jpg"
     },
-    {
-      question: "Где мы впервые встретились?",
-      correctAnswer: "На работе",
-      photo: "images/q2.jpg"
-    },
+
     {
       question: "Как зовут этого верблюда?",
       correctAnswer: "Надя",
-      photo: "images/q4.jpg"
+      photo: "images/qv2.jpg"
     },
     {
       question: "А этого верблюда как зовут?",
       correctAnswer: "Наташа",
-      photo: "images/q5.jpg"
+      photo: "images/qv3.jpg"
+    },
+    {
+      question: "Где мы впервые встретились?",
+      correctAnswer: "На работе",
+      photo: "images/qv4.jpg"
     },
     {
       question: "Сколько стран мы посетили за твой 30-ый год?",
       correctAnswer: "5",
-      photo: "images/q6.jpg"
+      photo: "images/qv5.jpg"
     }
   ],
 };
