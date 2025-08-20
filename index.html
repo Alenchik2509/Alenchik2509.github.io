@@ -1,0 +1,191 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Игра — Журнал</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Звуки -->
+  <audio id="bgMusic" src="music/birthday1.mp3" loop></audio>
+  <audio id="successSound" src="sounds/success.mp3"></audio>
+  <audio id="errorSound" src="sounds/error.mp3"></audio>
+
+  <div id="app" class="container">
+
+    <!-- 1. Страница входа -->
+    <section id="loginPage" class="page active">
+      <h1>Добро пожаловать!</h1>
+      <p class="lead">Введи дату рождения (DD.MM) и год (YYYY)</p>
+      <div class="field">
+        <label for="loginInput">Логин</label>
+        <input id="loginInput" autocomplete="username" />
+      </div>
+      <div class="field">
+        <label for="passInput">Пароль</label>
+        <input id="passInput" type="password" autocomplete="current-password" />
+      </div>
+      <div class="actions">
+        <button id="loginBtn">Войти</button>
+      </div>
+     </section>
+
+    <!-- 2. Праздничная страница -->
+    <section id="partyPage" class="page">
+      <div class="party-card">
+        <h2>С Днем Рождения, мой любимый и дорогой мужчина! Хочу чтобы ты был самым счастливым человечком на свете🎉🎉🎉🎉</h2>
+        <p class="big">С 30-летием!</p>
+        <div class="photo-wrap">
+          <img id="partyPhoto1" src="images/phhot1.jpg" alt="photo" />
+          <img id="partyPhoto2" src="images/artem1.jpg" alt="photo" />
+          <img id="partyPhoto3" src="images/artem2.jpg" alt="photo" />
+          <img id="partyPhoto4" src="images/artem3.jpg" alt="photo" />
+          <img id="partyPhoto5" src="images/artem4.jpg" alt="photo" />
+          <img id="partyPhoto6" src="images/artem5.jpg" alt="photo" />
+          <img id="partyPhoto7" src="images/artem6.jpg" alt="photo" />
+          <img id="partyPhoto8" src="images/artem7.jpg" alt="photo" />
+          <img id="partyPhoto9" src="images/artem8.jpg" alt="photo" />
+          <img id="partyPhoto10" src="images/artem9.jpg" alt="photo" />
+          <img id="partyPhoto11" src="images/artem10.jpg" alt="photo" />
+          <img id="partyPhoto12" src="images/artem11.jpg" alt="photo" />
+          <img id="partyPhoto13" src="images/artem12.jpg" alt="photo" />
+          <img id="partyPhoto14" src="images/artem13.jpg" alt="photo" />
+          <img id="partyPhoto15" src="images/artem14.jpg" alt="photo" />
+          <img id="partyPhoto16" src="images/artem15.jpg" alt="photo" />
+        </div>
+        <p>Я хочу тебе кое-что показать и подарить! Но, чтобы это увидеть — придётся немного подождать и напрячь память!</p>
+        <div class="emojis">🎂 💸 🎊</div>
+        <button id="startGameBtn" class="bigbtn">Нажми на меня — начни игру</button>
+      </div>
+    </section>
+
+    <!-- 3. Страница "журнала" после завершения вопросов -->
+    <section id="journalPage" class="page">
+      <button class="backBtn">← Назад</button>
+      <div class="photo-wrap">
+        <img id="partyPhoto4" src="images/jurnal1.jpg" alt="photo" />
+      </div>
+      <button id="continueBtnJournal" class="midbtn">Заинтриговала? Тогда жми дальше</button>
+    </section>
+
+    <!-- 4. Страница с вопросом -->
+    <section id="questionPage" class="page">
+      <button class="backBtn">← Назад</button>
+      <div class="photo-wrap">
+        <img id="partyPhoto2" src="images/photo2.jpg" alt="photo" />
+      </div>
+      <p id="questionText" class="question"></p>
+      <div class="field">
+        <input id="answerInput" autocomplete="off" />
+      </div>
+      <div class="actions">
+        <button id="answerBtn">Ответить</button>
+      </div>
+    </section>
+
+
+    <!-- 5. Страница ошибки -->
+    <section id="wrongChoicePage" class="page">
+      <h2>ВЫ СОВЕРШИЛИ ОШИБКУ, НО У ВАС ЕСТЬ ШАНС ВСЕ ИСПРАВИТЬ</h2>
+      <div class="actions">
+        <div class="photo-wrap">
+          <img id="partyPhoto6" src="images/photo_mem.jpg" alt="photo" />
+        </div>
+        <button id="continueBtnWrong" class="midbtn">Я передумал, хочу продолжить!</button>
+      </div>
+     </section>
+
+    <!-- 6. Страница PDF-подарка -->
+    <section id="pdfGiftPage" class="page">
+      <h2>Твой подарок № 1 ❤️</h2>
+      <p>Нажми на кнопку ниже, чтобы скачать свой особенный журнал, который только для тебя:</p>
+
+      <!-- Первая кнопка -->
+      <a href="files/gift1.pdf" download target="_blank" class="download-link">
+       📄 Скачать подарок № 1
+      </a>
+
+      <h2 style="margin-top: 40px;">Подарок № 2 🎁</h2>
+      <p>А вот и второй сюрприз — что-то особенное внутри!</p>
+
+      <!-- Вторая кнопка -->
+      <a href="files/gift2.pdf" download target="_blank" class="download-link">
+       📄 Скачать подарок № 2
+      </a>
+
+      <h2 style="margin-top: 40px;">Подарок № 3 🎉</h2>
+      <p>И ещё один сюрприз для тебя — не пропусти!</p>
+
+      <!-- Третья кнопка -->
+      <a href="files/gift3.pdf" download target="_blank" class="download-link">
+      📄 Скачать подарок № 3
+      </a>
+
+     <div class="actions" style="margin-top: 30px;">
+     <button id="toGalleryBtn">Перейти в галерею</button>
+     </div>
+   </section>
+
+
+
+    <!-- 7. Галерея -->
+    <section id="galleryPage" class="page">
+      <h2>Каталог фото</h2>
+      <div class="grid" id="galleryGrid">
+         <img src="images/ph1.jpg" alt="Фото 1">
+        <img src="images/ph2.jpg" alt="Фото 2">
+        <img src="images/ph3.jpg" alt="Фото 3">
+        <img src="images/ph4.jpg" alt="Фото 4">
+        <img src="images/ph5.jpg" alt="Фото 5">
+        <img src="images/ph6.jpg" alt="Фото 6">
+        <img src="images/ph7.jpg" alt="Фото 7">
+        <img src="images/ph8.jpg" alt="Фото 8">
+        <img src="images/ph9.jpg" alt="Фото 9">
+        <img src="images/ph10.jpg" alt="Фото 10">
+        <img src="images/ph11.jpg" alt="Фото 11">
+        <img src="images/ph12.jpg" alt="Фото 12">
+        <img src="images/ph13.jpg" alt="Фото 13">
+        <img src="images/ph14.jpg" alt="Фото 14">
+        <img src="images/ph15.jpg" alt="Фото 15">
+        <img src="images/ph16.jpg" alt="Фото 16">
+        <img src="images/ph17.jpg" alt="Фото 17">
+        <img src="images/ph18.jpg" alt="Фото 18">
+        <img src="images/ph19.jpg" alt="Фото 19">
+        <img src="images/ph20.jpg" alt="Фото 20">
+        <img src="images/ph21.jpg" alt="Фото 21">
+        <img src="images/ph22.jpg" alt="Фото 22">
+        <img src="images/ph23.jpg" alt="Фото 23">
+        <img src="images/ph24.jpg" alt="Фото 24">
+        <img src="images/ph25.jpg" alt="Фото 25">
+        <img src="images/ph26.jpg" alt="Фото 26">
+        <img src="images/ph27.jpg" alt="Фото 27">
+        <img src="images/ph28.jpg" alt="Фото 28">
+        <img src="images/ph29.jpg" alt="Фото 29">
+        <img src="images/ph30.jpg" alt="Фото 30">
+      </div>
+      <div class="actions">
+       <a href="files/katalog.rar" download>
+         <button class="midbtn">📁 Скачать весь каталог</button>
+       </a>
+      </div>
+    </section>
+
+  </div>
+
+
+
+
+  <!-- Лайтбокс -->
+  <div id="lightbox" class="lightbox" style="display:none;">
+    <div class="lightbox-content">
+      <img id="lightboxImg" alt="Lightbox Image" />
+      <p id="lightboxCaption"></p>
+      <button id="lightboxClose" aria-label="Закрыть">&times;</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
