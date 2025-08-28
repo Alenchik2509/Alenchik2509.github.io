@@ -6,27 +6,27 @@ const config = {
     {
       question: "Кто сделал данное фото?",
       correctAnswer: "Карагодин",
-      photo: "https://github.com/Alenchik2509/Alenchik2509.github.io/releases/download/v1.0/q1.jpg"
+      photo: "https://github.com/Alenchik2509/Alenchik2509.github.io/releases/download/v1.0/qv1.jpg"
     },
     {
       question: "Где мы впервые встретились?",
       correctAnswer: "На работе",
-      photo: "https://github.com/Alenchik2509/Alenchik2509.github.io/releases/download/v1.0/q2.jpg"
+      photo: "https://github.com/Alenchik2509/Alenchik2509.github.io/releases/download/v1.0/qv2.jpg"
     },
     {
       question: "Как зовут этого верблюда?",
       correctAnswer: "Надя",
-      photo: "https://github.com/Alenchik2509/Alenchik2509.github.io/releases/download/v1.0/q4.jpg"
+      photo: "https://github.com/Alenchik2509/Alenchik2509.github.io/releases/download/v1.0/qv4.jpg"
     },
     {
       question: "А этого верблюда как зовут?",
       correctAnswer: "Наташа",
-      photo: "https://github.com/Alenchik2509/Alenchik2509.github.io/releases/download/v1.0/q5.jpg"
+      photo: "https://github.com/Alenchik2509/Alenchik2509.github.io/releases/download/v1.0/qv5.jpg"
     },
     {
       question: "Сколько стран мы посетили за твой 30-ый год?",
       correctAnswer: "5",
-      photo: "https://github.com/Alenchik2509/Alenchik2509.github.io/releases/download/v1.0/q6.jpg"
+      photo: "https://github.com/Alenchik2509/Alenchik2509.github.io/releases/download/v1.0/qv6.jpg"
     }
   ],
 };
