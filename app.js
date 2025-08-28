@@ -16,17 +16,17 @@ const config = {
     {
       question: "Как зовут этого верблюда?",
       correctAnswer: "Надя",
-      photo: "https://github.com/Alenchik2509/Alenchik2509.github.io/releases/download/v1.0/qv4.jpg"
+      photo: "https://github.com/Alenchik2509/Alenchik2509.github.io/releases/download/v1.0/qv3.jpg"
     },
     {
       question: "А этого верблюда как зовут?",
       correctAnswer: "Наташа",
-      photo: "https://github.com/Alenchik2509/Alenchik2509.github.io/releases/download/v1.0/qv5.jpg"
+      photo: "https://github.com/Alenchik2509/Alenchik2509.github.io/releases/download/v1.0/qv4.jpg"
     },
     {
       question: "Сколько стран мы посетили за твой 30-ый год?",
       correctAnswer: "5",
-      photo: "https://github.com/Alenchik2509/Alenchik2509.github.io/releases/download/v1.0/qv6.jpg"
+      photo: "https://github.com/Alenchik2509/Alenchik2509.github.io/releases/download/v1.0/qv5.jpg"
     }
   ],
 };

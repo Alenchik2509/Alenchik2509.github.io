@@ -247,4 +247,20 @@ input:focus {
   .photo-wrap img {
     width: 150px;
   }
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+  }
+
+  .grid img {
+    aspect-ratio: 1 / 1; /* Делает квадратную форму */
+    object-fit: cover;   /* Обрезает изображение по квадрату */
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+}
+
 }
